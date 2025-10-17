@@ -439,12 +439,7 @@ function rotateMatrix(matrix) {
 function sortByAsc(arr) {
   const newArr = arr;
   let num = 0;
-  let lengthArr = 0;
-
-  while (arr[lengthArr] !== undefined) {
-    lengthArr += 1;
-  }
-  for (let i = 0; i < lengthArr; i += 1) {
+  for (let i = 0; i < arr.length; i += 1) {
     num = newArr[i];
     for (let j = i - 1; j >= 0; j -= 1) {
       if (newArr[j] > num) {
